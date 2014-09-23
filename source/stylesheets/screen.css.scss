@@ -53,6 +53,24 @@ html, body {
   padding-left: 20px;
 }
 
+a:before {
+  display: block;
+  content: " ";
+  margin-top:-77px;
+  height: 77px;
+  visibility: hidden;
+}
+
+h1:before {
+  display: block;
+  content: " ";
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+
+// end personal css
+
 #toc > ul > li > a > span {
   float: right;
   background-color: #2484FF;
