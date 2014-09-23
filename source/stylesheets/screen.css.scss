@@ -53,23 +53,15 @@ html, body {
   padding-left: 20px;
 }
 
+a[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+
 h1:before {
-  display: block;
-  content: " ";
-  margin-top: -77px;
-  height: 77px;
-  visibility: hidden;
-}
-
-h2:before {
-  display: block;
-  content: " ";
-  margin-top: -77px;
-  height: 77px;
-  visibility: hidden;
-}
-
-h3:before {
   display: block;
   content: " ";
   margin-top: -77px;
