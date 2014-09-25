@@ -41,6 +41,36 @@ html, body {
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
 
+// Personal css
+.header {
+  position: fixed;
+  height: 67px;
+  z-index: 1030;
+  right: 0;
+  left: 230px;
+  background-color: rgba(41, 41, 41, .9);
+  color: white;
+  padding-left: 20px;
+}
+
+a[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+
+h1:before {
+  display: block;
+  content: " ";
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+
+// end personal css
+
 #toc > ul > li > a > span {
   float: right;
   background-color: #2484FF;
@@ -285,7 +315,7 @@ html, body {
     background-color: $examples-bg;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 67px;
     bottom: 0;
   }
 
@@ -334,6 +364,7 @@ html, body {
 .content {
   // to place content above the dark box
   position: relative;
+  top: 67px;
   z-index: 30;
 
   &:after {
@@ -596,6 +627,17 @@ html, body {
   .tocify-wrapper .tocify-item > a {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
+  }
+
+  .header {
+    position: fixed;
+    height: 67px;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+    background-color: rgba(41, 41, 41, .9);
+    color: white;
+    padding-left: 20px;
   }
 }
 
