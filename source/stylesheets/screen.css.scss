@@ -44,28 +44,42 @@ html, body {
 // Personal css
 .header {
   position: fixed;
-  height: 67px;
+  height: 65px;
   z-index: 1030;
   right: 0;
-  left: 230px;
-  background-color: rgba(41, 41, 41, .9);
+  left: 0px;
+  background-color: rgba(74, 163, 223, .9);
   color: white;
   padding-left: 20px;
+}
+
+.header img {
+  position: relative;
+  bottom: 5px;
+}
+
+.header h1 {
+  display: inline-block;
+  position: fixed;
+  top: 5px;
+  left: 250px;
+  width: 700px;
+  overflow: hidden;
 }
 
 a[id]:before {
   display: block;
   content: " ";
-  margin-top: -77px;
-  height: 77px;
+  margin-top: -75px;
+  height: 75px;
   visibility: hidden;
 }
 
 h1:before {
   display: block;
   content: " ";
-  margin-top: -77px;
-  height: 77px;
+  margin-top: -75px;
+  height: 75px;
   visibility: hidden;
 }
 
@@ -102,7 +116,7 @@ h1:before {
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: 0;
+  top: 65px;
   left: 0;
   bottom: 0;
   width: $nav-width;
@@ -315,7 +329,7 @@ h1:before {
     background-color: $examples-bg;
     position: absolute;
     right: 0;
-    top: 67px;
+    top: 65px;
     bottom: 0;
   }
 
@@ -364,7 +378,7 @@ h1:before {
 .content {
   // to place content above the dark box
   position: relative;
-  top: 67px;
+  top: 65px;
   z-index: 30;
 
   &:after {
@@ -631,11 +645,11 @@ h1:before {
 
   .header {
     position: fixed;
-    height: 67px;
+    height: 65px;
     z-index: 1030;
     right: 0;
     left: 0;
-    background-color: rgba(41, 41, 41, .9);
+    background-color: rgba(74, 163, 223, .9);
     color: white;
     padding-left: 20px;
   }

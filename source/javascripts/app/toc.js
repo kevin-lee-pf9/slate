@@ -1,3 +1,7 @@
+// Bug: If you refresh the page when you are in a lower section, 
+// div ids above will not be recognized and the table of contents
+// will not move. Issue introduced by adding header.
+
 (function (global) {
 
   var closeToc = function() {

@@ -46,7 +46,7 @@ under the License.
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <style>
       .logo {
-        text-align: center;
+        display: inline-block;
       }
     </style>
   </head>
@@ -59,9 +59,6 @@ under the License.
       </span>
     </a>
     <div class="tocify-wrapper">
-      <div class="logo">
-        <%= image_tag "logo.png" %>
-      </div>
       <% if language_tabs %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
@@ -90,7 +87,10 @@ under the License.
       <% end %>
     </div>
     <div class="page-wrapper">
-      <div class="header">
+        <div class="header">
+          <div class="logo">
+          <%= image_tag "logo.png" %>
+        </div>
         <h1>Platform9 OpenStack Private Cloud API Documentation</h1>
       </div>
       <div class="dark-box"></div>
