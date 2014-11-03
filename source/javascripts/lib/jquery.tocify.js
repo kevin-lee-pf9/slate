@@ -398,7 +398,9 @@
                 // Sets a common class name to the list item
                 "class": itemClassName,
 
-                "data-unique": hashValue
+                "data-unique": hashValue,
+
+                "title": self.text()
 
             }).append($("<a/>", {
 
